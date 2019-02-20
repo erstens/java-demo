@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: cg-center
+  dubbo:
+    server: true
+    registry:
+      protocol:
+      name: dubbo
+      port: 21188
+      address: zookeeper://zookeeper.aixuexi.com:2181
+    level:
+      root: info
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql.aixuexi.com:3306/cat-graphical?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&autoReconnect=true&useSSL=false
+    username: test
+    password: test123
+
+logging:
+  level:
+    root: info
+
+server:
+  port: 8280
+
+prop:
+  projects: MarketActivityWeb,Skynet,ghostRider,Hulk,narnia
+  cat:
+    base: http://cat.dev.aixuexi.com

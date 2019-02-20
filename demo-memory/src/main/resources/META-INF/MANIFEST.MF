@@ -1,0 +1,4 @@
+Premain-Class: com.demo.calc.SizeOfObject
+Manifest-Version: 1.0
+Main-Class: Main
+
